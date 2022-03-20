@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Slider from 'rc-slider';
+import { Link } from 'react-router-dom';
 import { MenuItem, Select, Snackbar, IconButton } from "@mui/material";
 import CloseIcon from '@mui/icons-material/Close';
 import 'rc-slider/assets/index.css';
@@ -29,7 +30,7 @@ class Navbar extends Component {
         return (
            <header className="Navbar">
                <div className="logo">
-                    <a href="#">reactcolorpicker</a>
+                    <Link to='/'>reactcolorpicker</Link>
                </div>
                <div className="slider-container">
                <span>Level: {level}</span>
