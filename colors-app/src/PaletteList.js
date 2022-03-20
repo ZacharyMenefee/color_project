@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import MiniPalette from './MiniPalette';
 import { withStyles} from '@material-ui/styles';
 import React, { Component } from 'react';
@@ -6,7 +5,7 @@ import React, { Component } from 'react';
 const styles = {
     root: {
         backgroundColor: 'blue',
-        height: '100%',
+        height: '100vh',
         display: 'flex',
         alignItems: 'flex-start',
         justifyContent: 'center'
