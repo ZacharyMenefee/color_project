@@ -9,7 +9,6 @@ import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
 import { Picker } from "emoji-mart";
 import "emoji-mart/css/emoji-mart.css";
 
-
 class PaletteMetaForm extends Component {
     constructor(props) {
       super(props);
@@ -42,6 +41,7 @@ class PaletteMetaForm extends Component {
         emoji: emoji.native
       };
       this.props.handleSubmit(newPalette);
+      this.setState({ stage: "" });
     }
     handleClickOpen = () => {
       this.setState({ open: true });
